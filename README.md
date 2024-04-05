@@ -84,8 +84,9 @@ Adicione a seguinte linha:
 ```
 deltarpm=1
 ```
+
 Na sessão [main] deste arquivo, próximo ao final do arquivo, ficando assim:
-(...)
+
 [main]
 gpgcheck=True
 installonly_limit=3
