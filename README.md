@@ -37,3 +37,11 @@ Ainda no programa “Configurações”, então procure por “host” ou “com
 
 Note na imagem que também é possivel acrescentar outras pastas.
 Normalmente, estes compartilhamento são visiveis a partir de outras estações linux e também estações windows. A partir de estações Windows basta chamar como \\computador e os compartilhamentos que houverem no computador serão exibidos.
+
+## HABILITANDO SESSÃO REMOTA
+Carregue o programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Queremos no momento ativar o compartilhamento de sessão remota, isto é, permitir que outras pessoas na rede possam abrir uma sessão via ssh ou display grafico (ssh -X) neste computador:
+
+![Habilitando sessão remota](./sessao_remota_ativar.png)
+
+Note que na imagem é mostrado um exemplo de como posso usar o ssh para abrir uma sessão.
+
