@@ -221,12 +221,21 @@ Vá em configurações->Privacidade->Tela de bloqueio:
 E então ajuste o tempo:
 ![Opção de privacidade e tela de bloqueio](./gnome_tela_bloqueio02.png)
 
-Ou até mesmo desligue-o se isso for preciso. Note que na imagem acima, també, foi desligado as notificações, isso é especialmente util quando você deixa o local e outras pessoas podem passar na frente de sua tela e ler suas notificações.
-
-
+Ou até mesmo desligue-o se isso for preciso. Note que na imagem acima, també, foi desligado as notificações, isso é especialmente util quando você deixa o local e outras pessoas podem passar na frente de sua tela e ler suas notificações que seriam exibidas mesmo com a sessão bloqueada.
 
 ## AJUSTANDO O PROMPT NO TERMINAL
-(todo)
+Às vezes o prompt do terminal pode incomodar alguns, por exemplo, é justo que ao logarmos em servidores o terminal revele no prompt seu username e nome do computador:
+![Prompt normal](./mudando_prompt001.png)
+porém ao usarmos o desktop sabemos quem somos e que computador é, então vamos ajustar o terminal para não mostrar essas duas informações. A variável de ambiente que gostaríamos de modificar que faz o prompt refletir o que desejamos chama-se PS1 e podemos ajustá-la assim::
+```
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w:\[\033[00m\] ' 
+```
+Ele deixará nosso prompt "oldschool", colorido:
+![Novo prompt](./mudando_prompt01.png)
+Note na imagem acima, nosso prompt deixou de ser o que era antes para ser uma forma verde “oldschool” com o nome da pasta onde estamos. Nada de mostrar username ou computername.
+
+xxx
+
 
 
 ## INTEGRAÇÃO DO GNOME SHELL COM O FIREFOX
