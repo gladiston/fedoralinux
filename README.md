@@ -80,8 +80,11 @@ Depois editamos o arquivo /etc/dnf/dnf.conf:
 ```
 sudo nano /etc/dnf/dnf.conf
 ```
-Adicione a seguinte linha na sessão [main], próximo ao final do arquivo, ficando assim:
+Adicione a seguinte linha:
 ```
+deltarpm=1
+```
+Na sessão [main] deste arquivo, próximo ao final do arquivo, ficando assim:
 (...)
 [main]
 gpgcheck=True
@@ -90,7 +93,6 @@ clean_requirements_on_remove=True
 best=False
 skip_if_unavailable=True
 **deltarpm=1**
-```
 
 Salve-o. Depois execute no terminal:
 ```
