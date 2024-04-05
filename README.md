@@ -248,6 +248,13 @@ export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w:\[\033[00m\] '
 ```
 ![Novo prompt](./mudando_prompt04.png)
 
+Os “:” no meio da sentença pode ser trocado por um caractere unicode mais bacana:
+```
+xxxx
+```
+![Novo prompt](./mudando_prompt05.png)
+
+
 xxx
 
 
