@@ -225,7 +225,7 @@ Ou até mesmo desligue-o se isso for preciso. Note que na imagem acima, també, 
 
 ## AJUSTANDO O PROMPT NO TERMINAL
 Às vezes o prompt do terminal pode incomodar alguns, por exemplo, é justo que ao logarmos em servidores o terminal revele no prompt seu username e nome do computador:
-![Prompt normal](./mudando_prompt001.png)
+![Prompt normal](./mudando_prompt00.png)
 porém ao usarmos o desktop sabemos quem somos e que computador é, então vamos ajustar o terminal para não mostrar essas duas informações. A variável de ambiente que gostaríamos de modificar que faz o prompt refletir o que desejamos chama-se PS1 e podemos ajustá-la assim::
 ```
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w:\[\033[00m\] ' 
