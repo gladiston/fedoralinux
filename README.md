@@ -269,20 +269,20 @@ E ao final do arquivo ou numa localidade melhor, pois alguns .bashrc as vezes te
 # Meu ajuste de terminal ao estilo old school
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w➤\[\033[00m\] '
 Ficando mais ou menos assim nosso arquivo
-> (...)
-> # User specific aliases and functions
-> if [ -d ~/.bashrc.d ]; then
->     for rc in ~/.bashrc.d/*; do
->         if [ -f "$rc" ]; then
->             . "$rc"
->         fi
->     done
-> fi
-> 
-> # Meu ajuste de terminal ao estilo old school
-> **export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w➤\[\033[00m\] '**
-> 
-> unset rc
+> (...)  
+> # User specific aliases and functions  
+> if [ -d ~/.bashrc.d ]; then  
+>     for rc in ~/.bashrc.d/*; do  
+>         if [ -f "$rc" ]; then  
+>             . "$rc"  
+>         fi  
+>     done  
+> fi  
+>   
+> # Meu ajuste de terminal ao estilo old school  
+> **export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w➤\[\033[00m\] '**  
+>   
+> unset rc  
 A partir de agora, quando abrir o terminal, seu prompt será assim:  
 ![Novo prompt](./mudando_prompt06.png)  
 Muito bacana, hein?
