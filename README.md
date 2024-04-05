@@ -216,9 +216,12 @@ https://extensions.gnome.org/extension/615/appindicator-support/
 O sistema normalmente é ajustado automaticamente para bloquear após 5 minutos de atividade, mas ‘falta de atividade’ é um termo incorreto, o correto seria ‘tempo sem interatividade’, isto é, o tempo que você fica sem ter que interagir com o computador. Às vezes estamos processando algo demorado e temos de esperar ou acompanhar a movimentação de log de status e o computador durante este tempo estará tendo muito trabalho, porém com pouca interatividade a tela será bloqueada. Então precisamos saber quanto tempo precisamos nas tarefas do dia a dia ou então desligá-la.
 
 Vá em configurações->Privacidade->Tela de bloqueio:
-![Figura](./fig.png)
+![Opção de privacidade e tela de bloqueio](./gnome_tela_bloqueio01.png)
 
-E ajuste o tempo desejado, ou até mesmo desligue-o se isso for preciso.
+E então ajuste o tempo:
+![Opção de privacidade e tela de bloqueio](./gnome_tela_bloqueio02.png)
+
+Ou até mesmo desligue-o se isso for preciso. Note que na imagem acima, també, foi desligado as notificações, isso é especialmente util quando você deixa o local e outras pessoas podem passar na frente de sua tela e ler suas notificações.
 
 
 
