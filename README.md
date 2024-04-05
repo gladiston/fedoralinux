@@ -232,7 +232,21 @@ export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w:\[\033[00m\] '
 ```
 Ele deixará nosso prompt "oldschool", colorido:
 ![Novo prompt](./mudando_prompt02.png)
-Note na imagem acima, nosso prompt deixou de ser o que era antes para ser uma forma verde “oldschool” com o nome da pasta onde estamos. Nada de mostrar username ou computername.
+
+Note na imagem acima, nosso prompt deixou de ser o que era antes para ser uma forma verde “oldschool” com o nome da pasta onde estamos, agora não esta mais exibindo username ou computername.
+
+Se você não gosta de exibir o caminho completo do diretório onde você está porque prefere diminuí-lo, então você deve trocar o código \w por \W, a diferença entre eles é que o W maiúsculo mostra apenas o nome do diretório que você está sem o caminho completo. Muitas pessoas preferem desse jeito e caso queiram saber o caminho apenas executam o comando **pwd**.  Vamos mostrar um prompt classico com dois pontos, porém na cor azul:
+
+```
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]\w:\[\033[00m\] ' 
+```
+![Novo prompt](./mudando_prompt03.png)
+
+Ou se quiser o mesmo prompt acima, mas na classica cor verde:
+```
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w:\[\033[00m\] '
+```
+![Novo prompt](./mudando_prompt04.png)
 
 xxx
 
