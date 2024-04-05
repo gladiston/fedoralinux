@@ -620,22 +620,9 @@ Para instalar basta ir na loja e escolhê-lo pelo nome INKSCAPE.
 ## OUTROS TÓPICOS INTERESSANTES
 * Virtualização
 * Instalando o banco de dados FirebirdSQL
+* Ambiente de programação FreePascal/Lazarus
 * Ambiente de programação JAVA
 * Ambiente de programação Python
-* Ambiente de programação FreePascal/Lazarus
 * Versionamento com o asdf
 
-
-
-
-
-
-
-
-## xxxx
-(todo)
-
-
-## xxxx
-(todo)
 
