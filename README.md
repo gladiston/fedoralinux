@@ -254,9 +254,38 @@ export PS1="\e[32;40m\w➤\e[00m "
 ```
 ![Novo prompt](./mudando_prompt05.png)
 
-
-xxx
-
+Muito melhor, não é mesmo? Há uma página que descreve várias formas de como deixar seu prompt:  
+https://www.ibm.com/developerworks/linux/library/l-tip-prompt/ 
+Experimente todas as opções que puder e ao final determine o prompt que deseja usar. Mas tem um problema, ao definir o tipo de prompt que desejamos, não queremos executar “export PS1=...”  todas as vezes que formos usar o terminal, isso nos daria muito trabalho. Precisamos de um jeito de automatizar isso, então o primeiro passo é descobrir o tipo de terminal que usamos, execute: 
+```
+echo $TERM
+xterm-256color
+```
+Agora que sabemos que o nome é xterm-256color então edite o arquivo ~/.bashrc (o til representa a localização da sua pasta $HOME), então editamos este arquivo:  
+```
+gnome-text-editor ~/.bashrc
+```
+E ao final do arquivo ou numa localidade melhor, pois alguns .bashrc as vezes tem IFs que discriminam terminal colorido de não colorido vou acrescentar:
+# Meu ajuste de terminal ao estilo old school
+export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w➤\[\033[00m\] '
+Ficando mais ou menos assim nosso arquivo
+> (...)
+> # User specific aliases and functions
+> if [ -d ~/.bashrc.d ]; then
+>     for rc in ~/.bashrc.d/*; do
+>         if [ -f "$rc" ]; then
+>             . "$rc"
+>         fi
+>     done
+> fi
+> 
+> # Meu ajuste de terminal ao estilo old school
+> **export PS1='${debian_chroot:+($debian_chroot)}\[\033[32;40m\]\w➤\[\033[00m\] '**
+> 
+> unset rc
+A partir de agora, quando abrir o terminal, seu prompt será assim:  
+![Novo prompt](./mudando_prompt06.png)  
+Muito bacana, hein?
 
 
 ## INTEGRAÇÃO DO GNOME SHELL COM O FIREFOX
