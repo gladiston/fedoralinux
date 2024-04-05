@@ -14,4 +14,4 @@ O ambiente aqui trata-se dum notebook Acer, no entanto, boa parte deste document
 ## MUDANDO O NOME DO HOST
 Carregue o programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Não queremos no momento ativar o compartilhamento arquivos, mas desejamos apenas modificar o nome do computador por algo que represente melhor o nome do nosso computador que “fedora”:
 
-!(mudando_nome_do_host.png)
+!([mudando_nome_do_host.png](https://github.com/gladiston/fedoralinux/blob/main/mudando_nome_do_host.png))
