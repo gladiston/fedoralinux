@@ -35,4 +35,5 @@ Ainda no programa “Configurações”, então procure por “host” ou “com
 
 ![Escolhendo o que devo compartilhar](./compartilhar_arquivos_selecionar_pastas.png)
 
+Note na imagem que também é possivel acrescentar outras pastas.
 Normalmente, estes compartilhamento são visiveis a partir de outras estações linux e também estações windows. A partir de estações Windows basta chamar como \\computador e os compartilhamentos que houverem no computador serão exibidos.
