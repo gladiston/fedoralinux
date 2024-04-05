@@ -161,7 +161,7 @@ Estamos deixando claro que /media/label_dados estará disponível a todos os usu
 
 Execute no terminal:
 ```
-sudo vim /etc/fstab
+sudo nano /etc/fstab
 ```
 Agora vamos editar o arquivo /etc/fstab e então acrescentar após a última linha:
 ```
