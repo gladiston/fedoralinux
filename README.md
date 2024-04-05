@@ -91,7 +91,12 @@ sudo dnf upgrade
 ```
 As atualizações do fedora são assustadoramente pesadas, prepare-se para uma primeira atualização na casa do 1GB, mas graças ao recurso de deltaRPM esse download até 80% menor, mesma que patches sejam mais lentos, em máquinas novas isso realmente recompensa velocidades de internet menores.
 
-
+## ATIVE O SUPORTE A FLATPAK CENTRAL
+O flatpak está limitado aos repositórios cuja curadoria é do time do Fedora e isto limita a quantidade de programas, se for do seu interesse habilitar o repositório Central do flatpak a quantidade de programas é absurdamente grande. Para hablitá-lo, basta rodar o seguinte comando no terminal:
+```
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+Feche a sessão e logue-se novamente.
 
 ## COMPLETANDO O IDIOMA PORTUGUÊS
 O idioma português-brasil não está completamente instalado, para isso execute o programa “system-config-language”, porém ele não está instalado por padrão, execute:
@@ -170,13 +175,6 @@ Se achar a tela abaixo, então a mesma já está em seu sistema, caso contrário
 Outra extensão altamente recomendada é essa:
 https://extensions.gnome.org/extension/2890/tray-icons-reloaded/
 https://extensions.gnome.org/extension/615/appindicator-support/
-
-## ATIVE O SUPORTE A FLATPAK OUTROS
-O flatpak está limitado a alguns repositórios, vamos acrescentar um repositório mais abrangente, basta rodar o seguinte comando no terminal:
-```
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```
-Feche a sessão e logue-se novamente.
 
 ## BLOQUEIO DE TELA AUTOMÁTICO
 O sistema normalmente é ajustado automaticamente para bloquear após 5 minutos de atividade, mas ‘falta de atividade’ é um termo incorreto, o correto seria ‘tempo sem interatividade’, isto é, o tempo que você fica sem ter que interagir com o computador. Às vezes estamos processando algo demorado e temos de esperar ou acompanhar a movimentação de log de status e o computador durante este tempo estará tendo muito trabalho, porém com pouca interatividade a tela será bloqueada. Então precisamos saber quanto tempo precisamos nas tarefas do dia a dia ou então desligá-la.
