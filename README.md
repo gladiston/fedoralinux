@@ -74,16 +74,24 @@ O Fedora Linux é um comedor de atualizações, depois de instalado ele provavel
 As atualizações podem economizar até 80%, mas se isso é bom então porque não é ativado por padrão? Porque perde-se algum tempo aguardando cada patch ser aplicado. Se seu computador for rapido, apliacar um patch pode não ser um problema, mas se seu computador for lento demais compensaria mais esperar pelo download inteiro do que aplicar um patch. Então o deltaRPM é uma troca, em troca de downloads mais rapido você abdica de uma atualização posterior mais lenta - simples assim.
 E para habilitar esse recurso no Fedora é bem simples, abra um terminal e instale o pacote "deltarpm":
 ```
-sudo dnf install deltarpm vim
+sudo dnf install -Y deltarpm vim
 ```
 Depois editamos o arquivo /etc/dnf/dnf.conf:
 ```
-sudo vim /etc/dnf/dnf.conf
+sudo nano /etc/dnf/dnf.conf
 ```
-Adicione a linha:
-deltarpm=1
-Veja na figura:
-![Fig](./fig.png)
+Adicione a seguinte linha na sessão [main], próximo ao final do arquivo, ficando assim:
+```
+(...)
+[main]
+gpgcheck=True
+installonly_limit=3
+clean_requirements_on_remove=True
+best=False
+skip_if_unavailable=True
+**deltarpm=1**
+```
+
 Salve-o. Depois execute no terminal:
 ```
 sudo dnf update
