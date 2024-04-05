@@ -86,7 +86,7 @@ deltarpm=1
 ```
 
 Na sessão [main] deste arquivo, próximo ao final do arquivo, ficando assim:
-
+* * *
 [main]
 gpgcheck=True
 installonly_limit=3
@@ -94,7 +94,7 @@ clean_requirements_on_remove=True
 best=False
 skip_if_unavailable=True
 **deltarpm=1**
-
+* * *
 Salve-o. Depois execute no terminal:
 ```
 sudo dnf update
