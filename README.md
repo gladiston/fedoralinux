@@ -548,9 +548,10 @@ sudo apt remove hypnotix*
 
 ## GIT
 Vamos ajustar nosso ambiente com o GIT com os comandos:
-git config --global user.name "Gladiston Santana"
-git config --global user.email "gladiston.santana@gmail.com"
-
+```
+git config --global user.name "Seu nome completo"
+git config --global user.email "seu.email@dominio.com"
+```
 
 Recentemente, o github fez alterações em seu sistema onde a instrução:
 git config credential.helper 'cache --timeout=28800' 
