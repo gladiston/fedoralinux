@@ -14,4 +14,11 @@ O ambiente aqui trata-se dum notebook Acer, no entanto, boa parte deste document
 ## MUDANDO O NOME DO HOST
 Carregue o programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Não queremos no momento ativar o compartilhamento arquivos, mas desejamos apenas modificar o nome do computador por algo que represente melhor o nome do nosso computador que “fedora”:
 
-![mudando_nome_do_host.png](./mudando_nome_do_host.png)
+![?](./mudando_nome_do_host.png)
+
+## HABILITANDO O COMPARTILHAMENTO DE ARQUIVOS LOCAIS COM OUTROS COMPUTADORES
+Ainda no programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Neste momento queremos ativar o compartilhamento arquivos:
+
+![Habilitando o compartilhamento de arquivos](./compartilhar_arquivos_ativar.png)
+
+Quando precisar acessar arquivos neste computador a partir de outro computador, basta ter acesso ao navegador e indicar a URL que aparece na imagem e digitar a senha que você forneceu. Simples assim.
