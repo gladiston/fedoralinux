@@ -16,7 +16,7 @@ Carregue o programa “Configurações”, então procure por “host” ou “c
 
 ![Mudando o nome do host](./mudando_nome_do_host.png)
 
-## HABILITANDO O COMPARTILHAMENTO DE ARQUIVOS LOCAIS COM OUTROS COMPUTADORES
+## HABILITANDO O COMPARTILHAMENTO DE ARQUIVOS 
 Ainda no programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Neste momento queremos ativar o compartilhamento arquivos:
 
 ![Habilitando o compartilhamento de arquivos](./compartilhar_arquivos_ativar.png)
@@ -29,3 +29,10 @@ Ainda no programa “Configurações”, então procure por “host” ou “com
 ![Habilitando area de trabalho remota](./area_trabalho_remota.png)
 
 Quando precisar acessar sua estação de trabalho remota você poderá usar aplicativos como o remmina. Bastará fornecer a URL que indica seu computador como mostrado acima em destaque e então fornecer as credenciais fornecidas.
+
+## COMPARTILHAMENTO DE MULTIMEDIA
+Ainda no programa “Configurações”, então procure por “host” ou “compartilhamento” e então encontre a seção “Compartilhamento”. Neste momento queremos ativar o compartilhamento de multimedia, que na verdade é uma seção para escolher o que devo compartilhar, enquanto a seção HABILITANDO O COMPARTILHAMENTO DE ARQUIVOS habilita o compartilhamento de arquivos, a seção COMPARTILHAMENTO DE MULTIMEDIA determina o que deve ser compartilhado:
+
+![Escolhendo o que devo compartilhar](./compartilhar_arquivos_selecionar_pastas.png)
+
+Normalmente, estes compartilhamento são visiveis a partir de outras estações linux e também estações windows. A partir de estações Windows basta chamar como \\computador e os compartilhamentos que houverem no computador serão exibidos.
