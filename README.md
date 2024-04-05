@@ -117,6 +117,30 @@ e depois finalmente execute “system-config-language”:
 ![Fig](./fig.png)
 Apenas escolha o idioma “Portugues do Brasil” e clique em “OK” e o sistema se certificará que todos os pacotes de idiomas estão instalados.
 
+## GIT
+Vamos ajustar nosso ambiente com o GIT com os comandos:
+```
+git config --global user.name "Seu nome completo"
+git config --global user.email "seu.email@dominio.com"
+```
+
+Recentemente, o github fez alterações em seu sistema onde a instrução:
+git config credential.helper 'cache --timeout=28800' 
+Será ignorada completamente ou terminará em erro e a tentativa de login resultará neste erro:
+**Fatal Authentication Failed for: site.com.br**
+
+Para solucionar o problema, precisará instalar e configurar o ‘Git Credential Manager’ (GCM):
+```
+sudo dnf install -y seahorse
+sudo dnf install -y git-credential-libsecret
+```
+Após, o git só precisará dessa configuração adicional:
+```
+git config --global credential.helper /usr/libexec/git-core/git-credential-libsecret
+```
+Agora, você precisa saber que o método de autenticação mudou, você não usa mais o “username+ senha” do seu usuario git, mas “username+token”. O token é criado na página do github, no menu de sua profile->Settings->Developer settings->Personal access tokens->Tokens(classic) e então criar um token. Este token será o substituto de sua senha git no terminal.
+
+
 ## PARTIÇÕES NTFS NO SISTEMA
 Se utiliza uma partição Windows (NTFS) para gravar seus arquivos e dados a partir do Linux, você pode simplesmente não fazer nada e usar o gerenciador de arquivos do GNOME para entrar e sair do disco NTFS quando quiser. Contudo, se você tem que ir para o terminal e acessá-lo dali então lhe seria conveniente criar uma pasta vazia que ao entrar nela você já observasse o conteúdo dessa partição, se você gostou da idéia então vamos implementá-la:
 Identifique qual é o seu disco, execute no terminal:
@@ -545,30 +569,6 @@ Algumas fontes de TVs podem estar irregulares, então acaso não queira assistir
 ```
 sudo apt remove hypnotix*
 ```
-
-## GIT
-Vamos ajustar nosso ambiente com o GIT com os comandos:
-```
-git config --global user.name "Seu nome completo"
-git config --global user.email "seu.email@dominio.com"
-```
-
-Recentemente, o github fez alterações em seu sistema onde a instrução:
-git config credential.helper 'cache --timeout=28800' 
-Será ignorada completamente ou terminará em erro e a tentativa de login resultará neste erro:
-**Fatal Authentication Failed for: site.com.br**
-
-Para solucionar o problema, precisará instalar e configurar o ‘Git Credential Manager’ (GCM):
-```
-sudo dnf install -y seahorse
-sudo dnf install -y git-credential-libsecret
-```
-Após, o git só precisará dessa configuração adicional:
-```
-git config --global credential.helper /usr/libexec/git-core/git-credential-libsecret
-```
-Agora, você precisa saber que o método de autenticação mudou, você não usa mais o “username+ senha” do seu usuario git, mas “username+token”. O token é criado na página do github, no menu de sua profile->Settings->Developer settings->Personal access tokens->Tokens(classic) e então criar um token. Este token será o substituto de sua senha git no terminal.
-
 
 ## INSYNC
 Este é o melhor programa cliente de Google Drive, ele simula uma unidade de drive local e comumente é usado para colocar backups no Google Drive sem a necessidade do browser. Para instalar é simples e complicado, simples porque você só tem que dar dois cliques no arquivo e complicado porque se trata dum software proprietário que por não poder ser auditado você terá de confiar no fornecedor. Se você deseja prosseguir assim mesmo então visite a página:
